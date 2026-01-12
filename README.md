@@ -1,22 +1,23 @@
-🎨 Virtual Art Exhibition – Exhibition Curator Project
+**🎨 Virtual Art Exhibition – Exhibition Curator Project**
 
 A viewer-driven virtual exhibition platform that allows users to explore artworks from world-renowned museums and curate a personalised exhibition during their session.
 
 This project was built as part of the Tech Returners Launchpad – Exhibition Curator Project for the Software Engineering Skills Bootcamp.
 
-🌍 Live Demo
+**🌍 Live Demo**
 
-👉 Live site:
+Live site:
 https://your-project-name.vercel.app
+
 (Replace with your Netlify / Vercel / GitHub Pages URL)
 
-🖼️ Project Overview
+**🖼️ Project Overview**
 
 Users can search for artworks across multiple museum collections, view detailed information and images, and curate a personal exhibition that persists for the duration of their session.
 
 The application brings together data from multiple public museum APIs to support researchers, students, and art enthusiasts in discovering and comparing artworks across institutions.
 
-✅ Key Features
+**✅ Key Features**
 
 🔍 Search artworks using keywords
 
@@ -36,7 +37,7 @@ The application brings together data from multiple public museum APIs to support
 
 📱 Fully responsive design
 
-🧩 APIs Used
+**🧩 APIs Used**
 
 This project uses two free public museum APIs, satisfying the Launchpad requirement:
 
@@ -46,7 +47,7 @@ Victoria and Albert Museum (V&A) API
 
 All APIs used are free and do not require paid tiers.
 
-🛠️ Tech Stack
+**🛠️ Tech Stack**
 
 React
 
@@ -58,18 +59,7 @@ Context API (state management)
 
 Vite (build tooling)
 
-🧪 MVP Requirements Checklist
-Requirement	Status
-Search artworks	✅
-Save artworks to temporary collection	✅
-View images & core info	✅
-Session-based exhibition persistence	✅
-Multiple APIs	✅
-Responsive design	✅
-Accessibility considered	✅
-Loading & error feedback	✅
-Hosted on free platform	✅
-♿ Accessibility Considerations
+**♿ Accessibility Considerations**
 
 Semantic HTML landmarks
 
@@ -83,14 +73,15 @@ Clear visual focus indicators
 
 Accessibility was considered throughout the UI and interaction design.
 
-🚀 Running the Project Locally
-Prerequisites
+**🚀 Running the Project Locally**
+**Prerequisites**
 
 Node.js (v18 or later recommended)
 
 npm
 
-Installation
+**Installation**
+
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 npm install
@@ -100,10 +91,9 @@ npm run dev
 
 
 The app will be available at:
-
 http://localhost:5173
 
-🏗️ Project Structure (Overview)
+**🏗️ Project Structure (Overview)**
 src/
 ├── components/
 │   ├── ArtworkGrid.tsx
@@ -118,9 +108,7 @@ src/
 ├── App.tsx
 └── main.tsx
 
-📈 Possible Extensions
-
-The following features were identified as potential future improvements:
+**📈 Possible Extensions**
 
 Persistent exhibitions using user accounts
 
@@ -134,29 +122,20 @@ Social media sharing
 
 Backend storage using a non-relational database
 
-👤 Author
+**👤 Author**
 
-[Your Name]
-Software Engineering Graduate – Tech Returners
-GitHub: https://github.com/your-username
-LinkedIn: https://linkedin.com/in/your-profile
+Callum Graham
 
-📄 Acknowledgements
+Freelance Software Developer – Tech Returners
+
+GitHub: https://github.com/CallumGraham4
+
+LinkedIn: https://www.linkedin.com/in/callum-graham-7a68a5215/
+
+**📄 Acknowledgements**
 
 Tech Returners
 
 The Metropolitan Museum of Art
 
 Victoria and Albert Museum
-
-🏁 Launchpad Submission Notes
-
-This project:
-
-Meets all MVP and non-functional requirements
-
-Is hosted on a free distribution platform
-
-Includes full documentation for local setup
-
-Was completed within the expected Launchpad timeframe
