@@ -118,7 +118,7 @@ Japanese
 ```
 src/
 ├── components/
-    ├── ArtworkCard. 
+|   ├── ArtworkCard. 
 │   ├── ArtworkGrid.tsx
 │   ├── ArtworkModal.tsx
 │   ├── ExhibitionPanel.tsx
