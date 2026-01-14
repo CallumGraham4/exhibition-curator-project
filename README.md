@@ -1,73 +1,165 @@
-# React + TypeScript + Vite
+**Exhibition Curator Project**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A viewer driven virtual exhibition platform that allows users to explore artworks from world-renowned museums and curate a personalised exhibition during their session.
 
-Currently, two official plugins are available:
+This project was built as part of the Tech Returners Launchpad – Exhibition Curator Project for the Software Engineering Skills Bootcamp.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Live Demo**
 
-## React Compiler
+Live site:
+https://exhibition-curator-project.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Project Overview**
 
-## Expanding the ESLint configuration
+Users can search for artworks across multiple museum collections, view detailed information and images and curate a personal exhibition that persists for the duration of their session.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The application brings together data from multiple public museum APIs to support researchers, students, and art enthusiasts in discovering and comparing artworks across institutions.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+**Key Features**
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Search artworks using keywords
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Aggregated results from multiple museum APIs
+
+Artwork thumbnails with detailed modal views
+
+Curate a personal exhibition
+
+Add artworks to exhibition
+
+Slideshow view of curated exhibition
+
+External links to official museum catalogue pages
+
+Accessibility-aware UI (ARIA roles, screen reader support)
+
+Fully responsive design
+
+**APIs Used**
+
+This project uses two free public museum APIs, satisfying the Launchpad requirement:
+
+The Metropolitan Museum of Art Collection API
+
+Victoria and Albert Museum (V&A) API
+
+All APIs used are free and do not require paid tiers.
+
+**Tech Stack**
+
+React
+
+TypeScript
+
+Tailwind CSS
+
+Context API (state management)
+
+Vite (build tooling)
+
+**Accessibility Considerations**
+
+Semantic HTML landmarks
+
+ARIA roles for dialogs and live regions
+
+Screen-reader announcements for loading and search status
+
+Keyboard-accessible controls
+
+Clear visual focus indicators
+
+Accessibility was considered throughout the UI and interaction design.
+
+**Running the Project Locally**
+**Prerequisites**
+
+Node.js (v18 or later recommended)
+
+npm
+
+**Installation**
+
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+npm install
+
+Run the app
+npm run dev
+
+
+The app will be available at:
+http://localhost:5173
+
+**Example searches**
+
+**Artists:**
+
+Van Gogh
+
+**Art Movements:**
+
+Impressionism
+
+**Historical Period:**
+
+Medieval
+
+**Materials and techniques:**
+
+Oil painting
+
+**Nationality:**
+
+Japanese
+
+**Project Structure**
+
+```
+src/
+├── components/
+    ├── ArtworkCard. 
+│   ├── ArtworkGrid.tsx
+│   ├── ArtworkModal.tsx
+│   ├── ExhibitionPanel.tsx
+│   ├── ExhibitionSlideshow.tsx
+│   └── SearchBar.tsx
+├── context/
+│   └── ExhibitionContext.tsx
+├── services/
+│   └── api.ts
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Possible Extensions**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Persistent exhibitions using user accounts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Shareable exhibition links
+
+Advanced filtering and sorting
+
+Saved searches
+
+Social media sharing
+
+Backend storage using a non-relational database
+
+**Author**
+
+Callum Graham
+
+Freelance Software Developer – Tech Returners
+
+GitHub: https://github.com/CallumGraham4
+
+LinkedIn: https://www.linkedin.com/in/callum-graham-7a68a5215/
+
+**Acknowledgements**
+
+Tech Returners: https://www.techreturners.com/
+
+The Metropolitan Museum of Art: http://metmuseum.github.io/ 
+
+Victoria and Albert Museum: https://developers.vam.ac.uk/guide/v2/welcome.html
