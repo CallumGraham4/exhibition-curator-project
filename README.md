@@ -7,7 +7,7 @@ This project was built as part of the Tech Returners Launchpad – Exhibition Cu
 **Live Demo**
 
 Live site:
-https://exhibition-curator-project.netlify.app
+https://exhibition-curator-project.netlify.app/
 
 **Project Overview**
 
