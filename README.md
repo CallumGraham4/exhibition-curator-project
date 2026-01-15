@@ -25,7 +25,7 @@ Artwork thumbnails with detailed modal views
 
 Curate a personal exhibition
 
-Add artworks to exhibition
+Add/remove artworks to exhibition
 
 Slideshow view of curated exhibition
 
